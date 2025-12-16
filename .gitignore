@@ -23,3 +23,5 @@ cabal.project.local~
 .ghc.environment.*
 *.ozf
 *.pdf
+CHANGELOG.md
+haskell/Main

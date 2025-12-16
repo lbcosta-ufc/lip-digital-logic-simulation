@@ -40,7 +40,7 @@ O arquivo `Circuits.oz` contém o funtor `Circuits` que exporta os seguintes cir
 2.  **4-to-1 Multiplexer (`mux4`)**: Seleciona uma de 4 entradas baseada em 2 sinais de controle. Construído utilizando três multiplexadores 2-para-1.
 3.  **2-to-1 Multiplexer (`mux2`)**: Seleciona uma de 2 entradas baseada em 1 sinal de controle.
 
-**Programa Principal:**
+**Programa em Oz:**
 O arquivo `Main.oz` importa os funtores `Gates` e `Circuits` e executa uma simulação com streams de entrada predefinidos.
 Para executar:
 ```bash
@@ -48,4 +48,14 @@ ozc -c Gates.oz
 ozc -c Circuits.oz
 ozc -c Main.oz
 ozengine Main.ozf
+```
+
+**Programa em Haskell:**
+
+Para executar (necessário GHC ou Cabal):
+```bash
+cd haskell
+cabal run
+# ou
+ghc -i./app app/Main.hs -o Main && ./Main
 ```
